@@ -13,7 +13,17 @@ const app = new Vue(
       message: 'Ciao!',
       image: 'https://a.travel-assets.com/findyours-php/viewfinder/images/res40/36000/36114.jpg',
       text: '',
-      placeHolderMessage: 'Inserisci un messaggio'
-    }
+      placeHolderMessage: 'Inserisci un messaggio',
+      image2: 'https://d3u9sm4kpb9d1j.cloudfront.net/pictures/3135416',
+      num: 2
+    },
+      methods: {
+        aggiungiProdotto: function () {
+        this.num += 1;
+        },
+        rimuoviProdotto: function () {
+          this.num -= 1;
+        }
+      } 
   }
 );

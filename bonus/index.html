@@ -15,6 +15,12 @@
       <input v-model="text" v-bind:placeholder="placeHolderMessage">
       <p>{{ text }}</p>
     </div>
+    <div class="img">
+        <img :src="image2" alt="">
+        <span>Numero prodotti: {{ num }}</span>
+        <button @click="aggiungiProdotto">Aggiungi un prodotto</button>
+        <button @click="rimuoviProdotto">Rimuovi un prodotto</button>
+    </div>
   </div>
   <script src="js/script.js"></script>
 </body>
