@@ -11,6 +11,10 @@
   <div id="container">
     <h1>{{ message }}</h1>
     <img :src="image" alt="">
+    <div class="container-text">
+      <input v-model="text" v-bind:placeholder="placeHolderMessage">
+      <p>{{ text }}</p>
+    </div>
   </div>
   <script src="js/script.js"></script>
 </body>
